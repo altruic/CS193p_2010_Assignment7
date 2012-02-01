@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7487E65414BFCE240075944B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7487E65314BFCE240075944B /* UIKit.framework */; };
+		7487E65614BFCE240075944B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7487E65514BFCE240075944B /* Foundation.framework */; };
+		7487E65814BFCE240075944B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7487E65714BFCE240075944B /* CoreGraphics.framework */; };
+		7487E65A14BFCE240075944B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7487E65914BFCE240075944B /* CoreData.framework */; };
+		7487E66014BFCE250075944B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7487E65E14BFCE250075944B /* InfoPlist.strings */; };
+		7487E66214BFCE250075944B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7487E66114BFCE250075944B /* main.m */; };
+		7487E66614BFCE250075944B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7487E66514BFCE250075944B /* AppDelegate.m */; };
+		7487E69A14BFCE630075944B /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7487E67114BFCE630075944B /* CoreDataTableViewController.m */; };
+		7487E69C14BFCE630075944B /* DictPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 7487E67514BFCE630075944B /* DictPhoto.m */; };
+		7487E69D14BFCE630075944B /* DictPlace.m in Sources */ = {isa = PBXBuildFile; fileRef = 7487E67714BFCE630075944B /* DictPlace.m */; };
+		7487E69E14BFCE630075944B /* FavoritePhotosCoreDataTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7487E67914BFCE630075944B /* FavoritePhotosCoreDataTVC.m */; };
+		7487E69F14BFCE630075944B /* FavoritePlacesCoreDataTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7487E67B14BFCE630075944B /* FavoritePlacesCoreDataTVC.m */; };
+		7487E6A014BFCE630075944B /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 7487E67F14BFCE630075944B /* FlickrFetcher.m */; };
+		7487E6A114BFCE630075944B /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 7487E68314BFCE630075944B /* NSObject+SBJSON.m */; };
+		7487E6A214BFCE630075944B /* NSString+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 7487E68514BFCE630075944B /* NSString+SBJSON.m */; };
+		7487E6A314BFCE630075944B /* SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 7487E68714BFCE630075944B /* SBJSON.m */; };
+		7487E6A414BFCE630075944B /* SBJsonBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7487E68914BFCE630075944B /* SBJsonBase.m */; };
+		7487E6A514BFCE630075944B /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 7487E68B14BFCE630075944B /* SBJsonParser.m */; };
+		7487E6A614BFCE630075944B /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7487E68D14BFCE630075944B /* SBJsonWriter.m */; };
+		7487E6A714BFCE630075944B /* MostPopularPhotosTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7487E68F14BFCE630075944B /* MostPopularPhotosTVC.m */; };
+		7487E6A814BFCE630075944B /* MostPopularPlacesTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7487E69114BFCE630075944B /* MostPopularPlacesTVC.m */; };
+		7487E6A914BFCE630075944B /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7487E69314BFCE630075944B /* Photo.m */; };
+		7487E6AA14BFCE630075944B /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7487E69514BFCE630075944B /* PhotoViewController.m */; };
+		7487E6AB14BFCE630075944B /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = 7487E69714BFCE630075944B /* Place.m */; };
+		7487E6AC14BFCE630075944B /* RecentPhotosCoreDataTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7487E69914BFCE630075944B /* RecentPhotosCoreDataTVC.m */; };
+		7487E6CC14C23A090075944B /* CS193P_7.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7487E6CA14C23A090075944B /* CS193P_7.xcdatamodeld */; };
+		7487E6DE14CB5FD30075944B /* UIApplication+NetworkActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7487E6DD14CB5FD30075944B /* UIApplication+NetworkActivity.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7487E64F14BFCE240075944B /* CS193P-7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CS193P-7.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7487E65314BFCE240075944B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7487E65514BFCE240075944B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7487E65714BFCE240075944B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7487E65914BFCE240075944B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7487E65D14BFCE240075944B /* CS193P-7-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CS193P-7-Info.plist"; sourceTree = "<group>"; };
+		7487E65F14BFCE250075944B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7487E66114BFCE250075944B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7487E66314BFCE250075944B /* CS193P-7-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CS193P-7-Prefix.pch"; sourceTree = "<group>"; };
+		7487E66414BFCE250075944B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7487E66514BFCE250075944B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7487E67014BFCE630075944B /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
+		7487E67114BFCE630075944B /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
+		7487E67414BFCE630075944B /* DictPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictPhoto.h; sourceTree = "<group>"; };
+		7487E67514BFCE630075944B /* DictPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictPhoto.m; sourceTree = "<group>"; };
+		7487E67614BFCE630075944B /* DictPlace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictPlace.h; sourceTree = "<group>"; };
+		7487E67714BFCE630075944B /* DictPlace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictPlace.m; sourceTree = "<group>"; };
+		7487E67814BFCE630075944B /* FavoritePhotosCoreDataTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritePhotosCoreDataTVC.h; sourceTree = "<group>"; };
+		7487E67914BFCE630075944B /* FavoritePhotosCoreDataTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritePhotosCoreDataTVC.m; sourceTree = "<group>"; };
+		7487E67A14BFCE630075944B /* FavoritePlacesCoreDataTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritePlacesCoreDataTVC.h; sourceTree = "<group>"; };
+		7487E67B14BFCE630075944B /* FavoritePlacesCoreDataTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritePlacesCoreDataTVC.m; sourceTree = "<group>"; };
+		7487E67D14BFCE630075944B /* FlickrAPIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrAPIKey.h; sourceTree = "<group>"; };
+		7487E67E14BFCE630075944B /* FlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrFetcher.h; sourceTree = "<group>"; };
+		7487E67F14BFCE630075944B /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
+		7487E68114BFCE630075944B /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		7487E68214BFCE630075944B /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		7487E68314BFCE630075944B /* NSObject+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+SBJSON.m"; sourceTree = "<group>"; };
+		7487E68414BFCE630075944B /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		7487E68514BFCE630075944B /* NSString+SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SBJSON.m"; sourceTree = "<group>"; };
+		7487E68614BFCE630075944B /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		7487E68714BFCE630075944B /* SBJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJSON.m; sourceTree = "<group>"; };
+		7487E68814BFCE630075944B /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		7487E68914BFCE630075944B /* SBJsonBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonBase.m; sourceTree = "<group>"; };
+		7487E68A14BFCE630075944B /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		7487E68B14BFCE630075944B /* SBJsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonParser.m; sourceTree = "<group>"; };
+		7487E68C14BFCE630075944B /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		7487E68D14BFCE630075944B /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
+		7487E68E14BFCE630075944B /* MostPopularPhotosTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MostPopularPhotosTVC.h; sourceTree = "<group>"; };
+		7487E68F14BFCE630075944B /* MostPopularPhotosTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MostPopularPhotosTVC.m; sourceTree = "<group>"; };
+		7487E69014BFCE630075944B /* MostPopularPlacesTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MostPopularPlacesTVC.h; sourceTree = "<group>"; };
+		7487E69114BFCE630075944B /* MostPopularPlacesTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MostPopularPlacesTVC.m; sourceTree = "<group>"; };
+		7487E69214BFCE630075944B /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		7487E69314BFCE630075944B /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		7487E69414BFCE630075944B /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		7487E69514BFCE630075944B /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		7487E69614BFCE630075944B /* Place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Place.h; sourceTree = "<group>"; };
+		7487E69714BFCE630075944B /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Place.m; sourceTree = "<group>"; };
+		7487E69814BFCE630075944B /* RecentPhotosCoreDataTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecentPhotosCoreDataTVC.h; sourceTree = "<group>"; };
+		7487E69914BFCE630075944B /* RecentPhotosCoreDataTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecentPhotosCoreDataTVC.m; sourceTree = "<group>"; };
+		7487E6CB14C23A090075944B /* CS193P_7.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CS193P_7.xcdatamodel; sourceTree = "<group>"; };
+		7487E6DC14CB5FD30075944B /* UIApplication+NetworkActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+NetworkActivity.h"; sourceTree = "<group>"; };
+		7487E6DD14CB5FD30075944B /* UIApplication+NetworkActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+NetworkActivity.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7487E64C14BFCE240075944B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7487E65414BFCE240075944B /* UIKit.framework in Frameworks */,
+				7487E65614BFCE240075944B /* Foundation.framework in Frameworks */,
+				7487E65814BFCE240075944B /* CoreGraphics.framework in Frameworks */,
+				7487E65A14BFCE240075944B /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7487E64414BFCE240075944B = {
+			isa = PBXGroup;
+			children = (
+				7487E65B14BFCE240075944B /* CS193P-7 */,
+				7487E65214BFCE240075944B /* Frameworks */,
+				7487E65014BFCE240075944B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7487E65014BFCE240075944B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7487E64F14BFCE240075944B /* CS193P-7.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7487E65214BFCE240075944B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7487E65314BFCE240075944B /* UIKit.framework */,
+				7487E65514BFCE240075944B /* Foundation.framework */,
+				7487E65714BFCE240075944B /* CoreGraphics.framework */,
+				7487E65914BFCE240075944B /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7487E65B14BFCE240075944B /* CS193P-7 */ = {
+			isa = PBXGroup;
+			children = (
+				7487E66414BFCE250075944B /* AppDelegate.h */,
+				7487E66514BFCE250075944B /* AppDelegate.m */,
+				7487E6CA14C23A090075944B /* CS193P_7.xcdatamodeld */,
+				7487E6DC14CB5FD30075944B /* UIApplication+NetworkActivity.h */,
+				7487E6DD14CB5FD30075944B /* UIApplication+NetworkActivity.m */,
+				7487E6B214BFCEF70075944B /* Place */,
+				7487E6B114BFCEEE0075944B /* Photo */,
+				7487E6AD14BFCE910075944B /* Most Popular */,
+				7487E6AF14BFCEC00075944B /* Recent */,
+				7487E6AE14BFCEB40075944B /* Favorite */,
+				7487E6B014BFCEDF0075944B /* Other sources */,
+				7487E65C14BFCE240075944B /* Supporting Files */,
+			);
+			path = "CS193P-7";
+			sourceTree = "<group>";
+		};
+		7487E65C14BFCE240075944B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7487E65D14BFCE240075944B /* CS193P-7-Info.plist */,
+				7487E65E14BFCE250075944B /* InfoPlist.strings */,
+				7487E66114BFCE250075944B /* main.m */,
+				7487E66314BFCE250075944B /* CS193P-7-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7487E66F14BFCE630075944B /* CoreDataTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7487E67014BFCE630075944B /* CoreDataTableViewController.h */,
+				7487E67114BFCE630075944B /* CoreDataTableViewController.m */,
+			);
+			path = CoreDataTableViewController;
+			sourceTree = "<group>";
+		};
+		7487E67C14BFCE630075944B /* FlickrFetcher */ = {
+			isa = PBXGroup;
+			children = (
+				7487E67D14BFCE630075944B /* FlickrAPIKey.h */,
+				7487E67E14BFCE630075944B /* FlickrFetcher.h */,
+				7487E67F14BFCE630075944B /* FlickrFetcher.m */,
+				7487E68014BFCE630075944B /* JSON */,
+			);
+			path = FlickrFetcher;
+			sourceTree = "<group>";
+		};
+		7487E68014BFCE630075944B /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				7487E68114BFCE630075944B /* JSON.h */,
+				7487E68214BFCE630075944B /* NSObject+SBJSON.h */,
+				7487E68314BFCE630075944B /* NSObject+SBJSON.m */,
+				7487E68414BFCE630075944B /* NSString+SBJSON.h */,
+				7487E68514BFCE630075944B /* NSString+SBJSON.m */,
+				7487E68614BFCE630075944B /* SBJSON.h */,
+				7487E68714BFCE630075944B /* SBJSON.m */,
+				7487E68814BFCE630075944B /* SBJsonBase.h */,
+				7487E68914BFCE630075944B /* SBJsonBase.m */,
+				7487E68A14BFCE630075944B /* SBJsonParser.h */,
+				7487E68B14BFCE630075944B /* SBJsonParser.m */,
+				7487E68C14BFCE630075944B /* SBJsonWriter.h */,
+				7487E68D14BFCE630075944B /* SBJsonWriter.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		7487E6AD14BFCE910075944B /* Most Popular */ = {
+			isa = PBXGroup;
+			children = (
+				7487E67614BFCE630075944B /* DictPlace.h */,
+				7487E67714BFCE630075944B /* DictPlace.m */,
+				7487E69014BFCE630075944B /* MostPopularPlacesTVC.h */,
+				7487E69114BFCE630075944B /* MostPopularPlacesTVC.m */,
+				7487E67414BFCE630075944B /* DictPhoto.h */,
+				7487E67514BFCE630075944B /* DictPhoto.m */,
+				7487E68E14BFCE630075944B /* MostPopularPhotosTVC.h */,
+				7487E68F14BFCE630075944B /* MostPopularPhotosTVC.m */,
+			);
+			name = "Most Popular";
+			sourceTree = "<group>";
+		};
+		7487E6AE14BFCEB40075944B /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				7487E67A14BFCE630075944B /* FavoritePlacesCoreDataTVC.h */,
+				7487E67B14BFCE630075944B /* FavoritePlacesCoreDataTVC.m */,
+				7487E67814BFCE630075944B /* FavoritePhotosCoreDataTVC.h */,
+				7487E67914BFCE630075944B /* FavoritePhotosCoreDataTVC.m */,
+			);
+			name = Favorite;
+			sourceTree = "<group>";
+		};
+		7487E6AF14BFCEC00075944B /* Recent */ = {
+			isa = PBXGroup;
+			children = (
+				7487E69814BFCE630075944B /* RecentPhotosCoreDataTVC.h */,
+				7487E69914BFCE630075944B /* RecentPhotosCoreDataTVC.m */,
+			);
+			name = Recent;
+			sourceTree = "<group>";
+		};
+		7487E6B014BFCEDF0075944B /* Other sources */ = {
+			isa = PBXGroup;
+			children = (
+				7487E67C14BFCE630075944B /* FlickrFetcher */,
+				7487E66F14BFCE630075944B /* CoreDataTableViewController */,
+			);
+			name = "Other sources";
+			sourceTree = "<group>";
+		};
+		7487E6B114BFCEEE0075944B /* Photo */ = {
+			isa = PBXGroup;
+			children = (
+				7487E69214BFCE630075944B /* Photo.h */,
+				7487E69314BFCE630075944B /* Photo.m */,
+				7487E69414BFCE630075944B /* PhotoViewController.h */,
+				7487E69514BFCE630075944B /* PhotoViewController.m */,
+			);
+			name = Photo;
+			sourceTree = "<group>";
+		};
+		7487E6B214BFCEF70075944B /* Place */ = {
+			isa = PBXGroup;
+			children = (
+				7487E69614BFCE630075944B /* Place.h */,
+				7487E69714BFCE630075944B /* Place.m */,
+			);
+			name = Place;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7487E64E14BFCE240075944B /* CS193P-7 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7487E66C14BFCE250075944B /* Build configuration list for PBXNativeTarget "CS193P-7" */;
+			buildPhases = (
+				7487E64B14BFCE240075944B /* Sources */,
+				7487E64C14BFCE240075944B /* Frameworks */,
+				7487E64D14BFCE240075944B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CS193P-7";
+			productName = "CS193P-7";
+			productReference = 7487E64F14BFCE240075944B /* CS193P-7.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7487E64614BFCE240075944B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 7487E64914BFCE240075944B /* Build configuration list for PBXProject "CS193P-7" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7487E64414BFCE240075944B;
+			productRefGroup = 7487E65014BFCE240075944B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7487E64E14BFCE240075944B /* CS193P-7 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7487E64D14BFCE240075944B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7487E66014BFCE250075944B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7487E64B14BFCE240075944B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7487E66214BFCE250075944B /* main.m in Sources */,
+				7487E66614BFCE250075944B /* AppDelegate.m in Sources */,
+				7487E69A14BFCE630075944B /* CoreDataTableViewController.m in Sources */,
+				7487E69C14BFCE630075944B /* DictPhoto.m in Sources */,
+				7487E69D14BFCE630075944B /* DictPlace.m in Sources */,
+				7487E69E14BFCE630075944B /* FavoritePhotosCoreDataTVC.m in Sources */,
+				7487E69F14BFCE630075944B /* FavoritePlacesCoreDataTVC.m in Sources */,
+				7487E6A014BFCE630075944B /* FlickrFetcher.m in Sources */,
+				7487E6A114BFCE630075944B /* NSObject+SBJSON.m in Sources */,
+				7487E6A214BFCE630075944B /* NSString+SBJSON.m in Sources */,
+				7487E6A314BFCE630075944B /* SBJSON.m in Sources */,
+				7487E6A414BFCE630075944B /* SBJsonBase.m in Sources */,
+				7487E6A514BFCE630075944B /* SBJsonParser.m in Sources */,
+				7487E6A614BFCE630075944B /* SBJsonWriter.m in Sources */,
+				7487E6A714BFCE630075944B /* MostPopularPhotosTVC.m in Sources */,
+				7487E6A814BFCE630075944B /* MostPopularPlacesTVC.m in Sources */,
+				7487E6A914BFCE630075944B /* Photo.m in Sources */,
+				7487E6AA14BFCE630075944B /* PhotoViewController.m in Sources */,
+				7487E6AB14BFCE630075944B /* Place.m in Sources */,
+				7487E6AC14BFCE630075944B /* RecentPhotosCoreDataTVC.m in Sources */,
+				7487E6CC14C23A090075944B /* CS193P_7.xcdatamodeld in Sources */,
+				7487E6DE14CB5FD30075944B /* UIApplication+NetworkActivity.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7487E65E14BFCE250075944B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7487E65F14BFCE250075944B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7487E66A14BFCE250075944B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7487E66B14BFCE250075944B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7487E66D14BFCE250075944B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CS193P-7/CS193P-7-Prefix.pch";
+				INFOPLIST_FILE = "CS193P-7/CS193P-7-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7487E66E14BFCE250075944B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CS193P-7/CS193P-7-Prefix.pch";
+				INFOPLIST_FILE = "CS193P-7/CS193P-7-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7487E64914BFCE240075944B /* Build configuration list for PBXProject "CS193P-7" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7487E66A14BFCE250075944B /* Debug */,
+				7487E66B14BFCE250075944B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7487E66C14BFCE250075944B /* Build configuration list for PBXNativeTarget "CS193P-7" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7487E66D14BFCE250075944B /* Debug */,
+				7487E66E14BFCE250075944B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7487E6CA14C23A090075944B /* CS193P_7.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7487E6CB14C23A090075944B /* CS193P_7.xcdatamodel */,
+			);
+			currentVersion = 7487E6CB14C23A090075944B /* CS193P_7.xcdatamodel */;
+			path = CS193P_7.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7487E64614BFCE240075944B /* Project object */;
+}
